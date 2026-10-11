@@ -22,7 +22,7 @@ I used an ESP32 for this project because the control loop runs at 1 kHz, which a
 
 ## Firmware
 The firmware is written in C++ and uses a discrete PID controller. 
-* decoding routine calculates exact angle of pendulum at any given moment, via encoder signals.
+* decoding routine calculates the exact angle of the pendulum at any given moment, via encoder signals.
 * The PID loop calculates the required correction velocity, which is translated into step and direction pulses for the A4988 driver.
 
 ---
