@@ -10,7 +10,7 @@ The chassis was designed in Onshape using a mix of 3D-printed mounts and standar
 * **Linear Motion:** 8mm rods with LM8UU linear bearings.
 * **Documentation:** Full CAD assemblies, exploded views, and the BOM are in the repository.
 
-![Top-Level Assembly Drawing](hardware/drawings/IP-A-001.png)
+![Top-Level Assembly Drawing](hardware/drawings/IP-A-001.pdf)
 
 ## Electronics
 I used an ESP32 for this project because the control loop runs at 1 kHz, which required fast hardware interrupts to read the high-resolution encoder without missing counts.
@@ -18,7 +18,7 @@ I used an ESP32 for this project because the control loop runs at 1 kHz, which r
 * **Feedback:** 600 P/R Optical Quadrature Rotary Encoder (mounted on the pendulum pivot)
 * **Motor Driver:** A4988 Stepper Motor Driver
 
-![System Wiring Diagram](docs/assets/wiring_diagram.png)
+![System Wiring Diagram](docs/wiring/wiring_diagram.pdf)
 
 ## Firmware
 The firmware is written in C++ and uses a discrete-time PID controller. 
